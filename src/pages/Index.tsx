@@ -78,7 +78,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <button onClick={() => navigate("home")} className="flex items-center gap-1">
             <span className="text-2xl font-montserrat font-black neon-text-cyan tracking-widest">ONEX</span>
-            <span className="text-2xl font-montserrat font-black text-purple-400 tracking-widest">SMP</span>
+            <span className="text-2xl font-montserrat font-black text-blue-300 tracking-widest">SMP</span>
           </button>
 
           <div className="hidden md:flex items-center gap-1">
@@ -139,7 +139,7 @@ export default function Index() {
                 </div>
                 <h1 className="font-montserrat font-black text-6xl md:text-8xl mb-4 leading-none">
                   <span className="neon-text-cyan">ONEX</span>
-                  <span className="text-purple-400" style={{ textShadow: "0 0 20px #a855f7, 0 0 40px #a855f7" }}>SMP</span>
+                  <span className="text-blue-300" style={{ textShadow: "0 0 20px #7dd3fc, 0 0 40px #1d4ed8" }}>SMP</span>
                 </h1>
                 <p className="text-gray-300 font-rubik text-lg md:text-xl max-w-xl mx-auto mb-8 leading-relaxed">
                   Элитный Minecraft Java сервер. Только сильнейшие проходят отбор.<br />Ты следующий?
@@ -177,7 +177,7 @@ export default function Index() {
             <div className="max-w-3xl mx-auto px-4 pb-20">
               <div className="neon-border-purple rounded-2xl p-8 text-center card-glass">
                 <div className="text-4xl mb-3">🎮</div>
-                <h3 className="font-montserrat font-bold text-xl text-purple-300 mb-2">Вступи в Discord сервер</h3>
+                <h3 className="font-montserrat font-bold text-xl text-blue-200 mb-2">Вступи в Discord сервер</h3>
                 <p className="text-gray-400 font-rubik mb-5">После подачи заявки — обязательно присоединяйся к нашему сообществу</p>
                 <a
                   href="https://discord.gg/NHj4qGHM"
@@ -270,7 +270,7 @@ export default function Index() {
                 </div>
                 <p className="text-center text-gray-500 font-rubik text-xs">
                   После отправки свяжись с админом в{" "}
-                  <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="text-purple-400 underline">Discord</a>
+                  <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline">Discord</a>
                 </p>
               </div>
             ) : (
@@ -308,13 +308,13 @@ export default function Index() {
             <div className="grid md:grid-cols-2 gap-6 mb-10">
               {[
                 { icon: "Shield", title: "Строгий отбор", text: "Мы принимаем только тех, кто прошёл видео-отбор. Только Java Edition игроки.", color: "cyan" },
-                { icon: "Swords", title: "SMP формат", text: "Survival Multiplayer — выживание с реальными людьми, война за ресурсы и союзы.", color: "purple" },
+                { icon: "Swords", title: "SMP формат", text: "Survival Multiplayer — выживание с реальными людьми, война за ресурсы и союзы.", color: "blue" },
                 { icon: "Users", title: "Сообщество", text: "Активный Discord сервер, мероприятия и общение между участниками.", color: "cyan" },
-                { icon: "Trophy", title: "Достижения", text: "Лучшие игроки получают особый статус и признание внутри сообщества.", color: "purple" },
+                { icon: "Trophy", title: "Достижения", text: "Лучшие игроки получают особый статус и признание внутри сообщества.", color: "blue" },
               ].map((card) => (
                 <div key={card.title} className="card-glass rounded-2xl p-6 hover-scale border border-white/5 hover:border-cyan-500/30 transition-all">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${card.color === "cyan" ? "bg-cyan-500/20" : "bg-purple-500/20"}`}>
-                    <Icon name={card.icon} size={22} className={card.color === "cyan" ? "text-cyan-400" : "text-purple-400"} />
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${card.color === "cyan" ? "bg-cyan-500/20" : "bg-blue-600/20"}`}>
+                    <Icon name={card.icon} size={22} className={card.color === "cyan" ? "text-cyan-400" : "text-blue-300"} />
                   </div>
                   <h3 className="font-montserrat font-bold text-white text-lg mb-2">{card.title}</h3>
                   <p className="text-gray-400 font-rubik text-sm leading-relaxed">{card.text}</p>
@@ -323,13 +323,13 @@ export default function Index() {
             </div>
             <div className="card-glass neon-border-purple rounded-2xl p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Link" size={22} className="text-purple-400" />
+                <div className="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Link" size={22} className="text-blue-300" />
                 </div>
                 <div>
                   <h3 className="font-montserrat font-bold text-white text-lg mb-3">Ссылки сервера</h3>
                   <div className="space-y-2">
-                    <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-purple-400 font-rubik text-sm hover:text-purple-300 transition-colors">
+                    <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-300 font-rubik text-sm hover:text-blue-200 transition-colors">
                       <Icon name="MessageCircle" size={14} />
                       Discord: discord.gg/NHj4qGHM
                     </a>
@@ -516,10 +516,10 @@ export default function Index() {
         <footer className="border-t border-white/5 mt-12 py-8 text-center">
           <div className="font-montserrat font-black text-lg mb-1">
             <span className="neon-text-cyan">ONEX</span>
-            <span className="text-purple-400">SMP</span>
+            <span className="text-blue-300">SMP</span>
           </div>
           <p className="text-gray-600 font-rubik text-xs mb-3">Minecraft Java Edition · Только лучшие</p>
-          <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-400 transition-colors inline-block">
+          <a href="https://discord.gg/NHj4qGHM" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-300 transition-colors inline-block">
             <Icon name="MessageCircle" size={18} />
           </a>
         </footer>
